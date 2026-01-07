@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <h1>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          DevJobs
+        </h1>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="empleos.html">Empleos</a>
+          <a href="empresas.html">Empresas</a>
+          <a href="salarios.html">Salarios</a>
+        </nav>
+      <div>
+        <button type="button">Subir CV</button>
+        <button type="button" class="btn-avatar"> 
+          <img src="Profile_pic.png" alt=""> 
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section>
+      <h1>Encuentra tu proximo trabajo</h1>
+      <p>Explora miles de oportunidades en el sector tecnologico</p>
+
+      <!-- Buscador -->
+      <form role="search">
+        <div class="search-row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
+
+        <input type="text" placeholder="Escribir busqueda...">
+
+        <button type="submit">Buscar</button>
+        </div>
+
+        <div class="filters">
+        <button type="button">Tecnología <span>▼</span></button>
+        <button type="button">Ubicación <span>▼</span></button>
+        <button type="button">Tipo de contrato <span>▼</span></button>
+        <button type="button">Nivel de experiencia <span>▼</span></button>
+        </div>
+      </form>
+      </section>
+
+      <!-- Resultados -->
+      <section class="results">
+        <h2>Resultados de búsqueda</h2>
+
+        <!-- Tarjeta 1 -->
+        <article>
+          <h3>Ingeniero de Software</h3>
+          <p>Tech Solutions Inc. | Remoto</p>
+          <p>
+            Buscamos un ingeniero de software con experiencia en desarrollo web y
+            conocimientos en JavaScript, React y Node.js. El candidato ideal debe
+            ser capaz de trabajar en equipo y tener buenas habilidades de
+            comunicación.
+          </p>
+          <button type="button">Aplicar</button>            
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article>         
+          <h3>Analista de Datos</h3>
+          <p>Data Driven Co. | Ciudad de México</p>
+          
+          <p>
+          Estamos buscando un analista de datos con experiencia en el manejo de
+          grandes conjuntos de datos y herramientas de visualización. Se requiere
+          conocimiento en SQL, Python y R.
+          </p>         
+          <button type="button">Aplicar</button>          
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article>
+        <h3>Desarrollador de Aplicaciones Móviles</h3>
+        <p>Mobile Apps Ltd. | Guadalajara</p>
+        
+        <p>
+          Buscamos un desarrollador de aplicaciones móviles con experiencia en
+          iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin
+          y el desarrollo de interfaces de usuario.
+        </p>
+        <button type="button">Aplicar</button>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article>
+          <h3>Ingeniero de DevOps</h3>
+          <p>Cloud Services SA | Remoto</p>
+        
+          <p>
+            Estamos buscando un ingeniero de DevOps con experiencia en la gestión
+            de infraestructuras en la nube, automatización de procesos y
+            herramientas de integración continua. Se requiere conocimiento en AWS,
+            Azure o GCP.
+          </p>        
+          <button type="button">Aplicar</button>
+        </article>
+      </section>
+
+      <!-- Paginación -->
+      <nav class="pagination" role="navigation" aria-label="Paginación de resultados">
+        <ul>
+          <li>
+        <button type="button" aria-label="Página anterior" disabled aria-disabled="true" data-action="prev">
+          &lt;
+        </button>
+          </li>
+          <li>
+        <button type="button" aria-current="page" data-page="1">1</button>
+          </li>
+          <li>
+        <button type="button" data-page="2">2</button>
+          </li>
+          <li>
+        <button type="button" data-page="3">3</button>
+          </li>
+          <li>
+        <button type="button" data-page="4">4</button>
+          </li>
+          <li>
+        <button type="button" data-page="5">5</button>
+          </li>
+          <li>
+        <button type="button" aria-label="Página siguiente" data-action="next">
+          &gt;
+        </button>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
