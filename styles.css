@@ -401,6 +401,8 @@ article {
 
 /* PAGINA DE RESULTADOS AJUSTES */
 
+
+
 main > section.results article {
   background-color: transparent;
   border: 1px solid var(--border);
